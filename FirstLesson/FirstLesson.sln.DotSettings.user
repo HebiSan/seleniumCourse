@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\User\AppData\Local\JetBrains\Rider2021.3\resharper-host\temp\Rider\vAny\CoverageData\_FirstLesson.-1379575997\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=58214cb8_002D902c_002D4a9b_002D879b_002D4f7d60c03c87/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="MyFirstTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B9913351-30BA-4605-B161-9531F4A1472A::.NETFramework,Version=v4.7.2::ClassLibrary1.SeleniumTests.MyFirstTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B9913351-30BA-4605-B161-9531F4A1472A::.NETFramework,Version=v4.7.2::ClassLibrary1.SeleniumTests.Locators&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8df5c407_002Da049_002D4c4f_002Da81b_002D5431359c1b54/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Locators" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B9913351-30BA-4605-B161-9531F4A1472A::.NETFramework,Version=v4.7.2::ClassLibrary1.SeleniumTests.Locators&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B9913351-30BA-4605-B161-9531F4A1472A::.NETFramework,Version=v4.7.2::ClassLibrary1.SeleniumTests.MyFirstTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -1,0 +1,10 @@
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\MySeleniumFirstTests.dll
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\MySeleniumFirstTests.pdb
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\nunit.framework.dll
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\WebDriver.dll
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\nunit.framework.xml
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.csproj.AssemblyReference.cache
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.csproj.CoreCompileInputs.cache
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.csproj.CopyComplete
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.dll
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.pdb
