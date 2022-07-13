@@ -4,8 +4,9 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 
-namespace ClassLibrary1
+namespace FirstSeleniumTests
 {
+    [TestFixture]
     public class SeleniumTests
     {
         [SetUp]
@@ -13,9 +14,9 @@ namespace ClassLibrary1
         {
             var options = new ChromeOptions();
             options.AddArgument("--incognito");
-            driver = new ChromeDriver("D:\\Downloads\\chromedriver_win32", options);
-            //waiter = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            driver = new ChromeDriver(options);
+            waiter = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         [Test]
@@ -40,31 +41,32 @@ namespace ClassLibrary1
             //var link = driver.FindElement(By.LinkText("Как сделать заказ"));
             //Домашка:
             var cookiePolicyAgree = By.CssSelector("button[class^=cookie-policy]");
-            var booksMenu = By.LinkText("Книги");
-            var allBooks = By.LinkText("Все книги");
+            var booksMenu = By.CssSelector("[data-toggle=header-genres]");
+            var allBooks = By.XPath("//*[@id='header-genres']//a[@href='/books/']");
             var addBookInCart = By.XPath("(//*[starts-with(@id,'buy')])[text()='В КОРЗИНУ'][1]");
             var issueOrder = By.XPath("(//*[starts-with(@id,'buy')])[text()='ОФОРМИТЬ'][1]");
-            var beginOrder =
-                By.CssSelector(
-                    "button[type='submit']"); //синей кнопки нет на странице, локатор на большую красную в футере
-            var openDeliverySettings = By.LinkText("Выбрать новое место и способ"); //нет галочки курьерской доставки
+            var beginOrder = By.CssSelector("[id=cart-total-default] button[type=submit]");
+            var openDeliverySettings = By.CssSelector("button[class*=delivery]"); 
             var chooseCourierDelivery = By.XPath("//div[contains(text(),'Курьер')]");
             var chooseSelfDelivery = By.XPath("//div[contains(text(),'Самовывоз')]");
             var addressInput = By.Id("deliveryAddress");
             var addressError = By.CssSelector("//div[contains(text(),'Уточните адрес для доставки курьером')]");
-            var cityError =
-                By.CssSelector(
-                    "//div[contains(text(),'Извините, но пока мы не доставляем заказы в этот населённый пункт')]");
+            var cityError = By.CssSelector("//div[contains(text(),'Извините, но пока мы не доставляем заказы в этот населённый пункт')]");
             var loader = By.ClassName("loading");
-            var appropriateServices =
-                By.XPath("//*[@class='delivery--courier-delivery']//li"); //список найденных служб доставки
+            var appropriateServices = By.XPath("//*[@class='delivery--courier-delivery']//div[2]/li");
             var closeButton = By.ClassName("delivery--button-block--close");
+            var saveButton = By.ClassName("button-save");
+            var chooseAnotherButton = By.ClassName("button-close");
+            var closeImg = By.CssSelector("img[class^=x-close]");
+            var lightBox = By.ClassName("container");
+
         }
 
         [TearDown]
         public void TearDown()
         {
             driver.Quit();
+            driver = null;
         }
 
         private IWebDriver driver;
