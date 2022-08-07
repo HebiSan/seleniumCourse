@@ -8,3 +8,6 @@ D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests
 D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.csproj.CopyComplete
 D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.dll
 D:\дз\selenium\FirstLesson\MySeleniumFirstTests\obj\Debug\MySeleniumFirstTests.pdb
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\WebDriver.Support.dll
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\chromedriver.exe
+D:\дз\selenium\FirstLesson\MySeleniumFirstTests\bin\Debug\SeleniumExtras.WaitHelpers.dll
