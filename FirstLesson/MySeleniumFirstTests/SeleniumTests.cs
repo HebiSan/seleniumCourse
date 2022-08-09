@@ -119,13 +119,18 @@ namespace FirstSeleniumTests
             wait.Until(ExpectedConditions.InvisibilityOfElementLocated(lightBoxLocator));
         }
 
-        // [Test]
-        // public void TestDatepicker()
-        // {
-        //     driver.Navigate().GoToUrl("https://jqueryui.com/datepicker/");
-        //     (driver as IJavaScriptExecutor)
-        //         .ExecuteScript($"$('.ui-datepicker').datepicker('setDate','{DateTime.Today.AddDays(8).ToString("dd.MM.yyyy")}')");
-        // }
+        [Test]
+        public void TestDatepicker()
+        {
+            var expectedDate = DateTime.Today.AddDays(8).ToString("MM'/'dd'/'yyyy");
+            driver.Navigate().GoToUrl("https://jqueryui.com/datepicker/");
+            driver.SwitchTo().Frame(driver.FindElement(By.ClassName("demo-frame")));
+            (driver as IJavaScriptExecutor)
+                .ExecuteScript($"$('.hasDatepicker').datepicker('setDate','{expectedDate}')");
+            var actualDate = driver.FindElement(By.ClassName("hasDatepicker")).GetAttribute("value");
+            Assert.AreEqual(expectedDate, actualDate, "Дата была выставлена неверно");
+
+        }
 
         [Test]
         public void Labirint_AuthorizeViaMyLabirintLink()
