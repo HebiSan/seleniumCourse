@@ -48,16 +48,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SeleniumTests.cs</url>
-          <line>130</line>
-          <properties documentPath="D:\дз\selenium\FirstLesson\MySeleniumFirstTests\SeleniumTests.cs" initialLine="131" containingFunctionPresentation="method 'TestDatepicker'">
+          <line>129</line>
+          <properties documentPath="D:\дз\selenium\FirstLesson\MySeleniumFirstTests\SeleniumTests.cs" initialLine="129" containingFunctionPresentation="method 'TestDatepicker'">
             <startOffsets>
-              <option value="7404" />
+              <option value="7373" />
             </startOffsets>
             <endOffsets>
-              <option value="7478" />
+              <option value="7462" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

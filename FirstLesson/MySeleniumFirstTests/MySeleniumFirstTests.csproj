@@ -56,6 +56,11 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Pages\CartPage.cs" />
+        <Compile Include="Pages\CourierDeliveryLightbox.cs" />
+        <Compile Include="Pages\HomePage.cs" />
+        <Compile Include="Pages\PageBase.cs" />
+        <Compile Include="SeleniumTestBase.cs" />
         <Compile Include="SeleniumTests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
